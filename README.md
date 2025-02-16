@@ -70,6 +70,7 @@ Simply sign up and navigate to the Events section to register for upcoming races
 
 🔹 Can I connect my fitness tracker?
 Currently, we are working on integrating Fitbit & Strava support. Stay tuned!
+![image](https://github.com/user-attachments/assets/1eb1d863-4bc6-44a0-b5aa-4b92afe59a43)
 
 
 
