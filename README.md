@@ -6,6 +6,8 @@ Welcome to **Run with Dheeraj**, a dynamic platform designed for athletes and ru
 
 🚀 *"Every run starts with a step, and every runner has a story. Let's create yours!"*  
 
+![image](https://github.com/user-attachments/assets/6710fc9d-49f6-4cd1-b3b1-5bf134a59dac)
+
 ---
 
 ## 🎯 **Why Choose Run with Dheeraj?**  
@@ -70,7 +72,6 @@ Simply sign up and navigate to the Events section to register for upcoming races
 
 🔹 Can I connect my fitness tracker?
 Currently, we are working on integrating Fitbit & Strava support. Stay tuned!
-![image](https://github.com/user-attachments/assets/1eb1d863-4bc6-44a0-b5aa-4b92afe59a43)
 
 
 
