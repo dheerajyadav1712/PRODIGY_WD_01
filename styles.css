@@ -1,0 +1,245 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text for readability */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+body {
+    padding-top: 80px; /* Adjust padding to prevent content from being hidden behind the fixed header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f90;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text for nav links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f90; /* Orange hover color for links */
+}
+
+/* Position the login and signup buttons at the top-right corner */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+/* General circle button styles */
+.auth-buttons .btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #f7f1f1;
+    border-radius: 50%;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons .btn-circle:hover {
+    background-color: #f90;
+    color: white;
+}
+
+/* Login button with image */
+.auth-buttons .login-btn {
+    background-image: url('login-icon.png'); /* Replace with your image path */
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent; /* Hide text, as the image will act as the button */
+}
+
+/* Hero section */
+.hero {
+    background: #2d3a4b; /* Dark teal background */
+    color: #fff;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta {
+    font-size: 1.3em;
+    color: #fff; /* Orange call to action color */
+}
+
+.btn {
+    background-color: #f90; /* Orange button color */
+    color: #222;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Section for displaying all charts */
+#stats {
+    padding: 3em 1em;
+    background-color: #fff;
+}
+
+.chart-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.chart-container {
+    width: 48%;
+    background-color: #f4f4f9; /* Light gray background for chart containers */
+    padding: 1em;
+    border-radius: 8px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #ff7f50, #ff4500);
+    color: #fff;
+    padding: 2em 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.hero p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.8em 1.5em;
+    background: #fff;
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ff7f50;
+}
+
+#stats {
+    padding: 2em;
+    background: #fff;
+    text-align: center;
+}
+
+#stats h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.chart-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.chart-container {
+    flex: 1 1 calc(50% - 2em);
+    margin: 1em;
+    max-width: 300px; /* Restricting chart size */
+    background: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chart-container {
+        flex: 1 1 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}

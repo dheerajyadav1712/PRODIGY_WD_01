@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f90;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f90;
+}
+
+.forgot-password {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forgot-password p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.forgot-password .form-group {
+    margin-bottom: 15px;
+}
+
+.forgot-password label {
+    font-weight: bold;
+    color: #333;
+}
+
+.forgot-password input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.forgot-password .btn:hover {
+    background-color: #e67e00;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #f90;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    color: #333;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+

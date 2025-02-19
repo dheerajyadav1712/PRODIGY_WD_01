@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracking</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <header>
+        <h1>Run with Dheeraj</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Schedules</a></li>
+                <li><a href="progress.html">Progress Tracking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="progress-overview">
+        <h2>Progress Tracking</h2>
+        <p>Monitor your running stats and analyze your improvements over time!</p>
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Distance</h3>
+                <p>150 km</p>
+            </div>
+            <div class="stat-card">
+                <h3>Personal Best</h3>
+                <p>5 km in 25:45</p>
+            </div>
+            <div class="stat-card">
+                <h3>Monthly Goal</h3>
+                <p>50 km</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts">
+        <h2>Your Running Performance</h2>
+        <div class="chart-container">
+            <canvas id="distanceChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="paceChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Run with Dheeraj. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts2.js"></script>
+</body>
+</html>

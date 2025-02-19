@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f90; /* Highlight color */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f90;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 80px; /* Avoids overlap with fixed header */
+}
+
+/* Membership Introduction */
+.membership-intro h2 {
+    font-size: 2.5rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+.membership-intro p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membership-intro .btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.membership-intro .btn:hover {
+    background-color: #e03e00;
+}
+
+/* Membership Benefits */
+.membership-benefits h3 {
+    font-size: 2rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+/* Benefits Grid */
+.benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Benefit Card */
+.benefit-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h4 {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Membership Pricing */
+.membership-pricing h3 {
+    font-size: 2rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+/* Pricing Grid */
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card h4 {
+    font-size: 1.8rem;
+    color: #ff4500;
+    margin-bottom: 1rem;
+}
+
+.pricing-card p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card .btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card .btn:hover {
+    background-color: #e03e00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}

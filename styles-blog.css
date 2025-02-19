@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f90;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f90;
+}
+
+/* Blog post styles */
+.blog-post {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;  /* Allow content area to grow and push the footer down */
+}
+
+.blog-post h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.blog-post .post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #444;
+}
+
+.blog-post ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.blog-post ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.blog-post .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f90;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.blog-post .btn:hover {
+    background-color: #e87a00;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;  /* Ensure footer stays at the bottom */
+}

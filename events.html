@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <h1>Run with Dheeraj</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Schedules</a></li>
+                <li><a href="progress.html">Progress Tracking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="events-section">
+        <h2>Upcoming Events</h2>
+        <p>Join us for thrilling running events and challenges. Sign up today!</p>
+
+        <!-- Event Cards -->
+        <div class="event-cards">
+            <div class="event-card">
+                <h3>City Marathon</h3>
+                <p>Date: March 15, 2024</p>
+                <p>Location: Central Park, NYC</p>
+                <button onclick="registerEvent('City Marathon')">Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Trail Run</h3>
+                <p>Date: April 22, 2024</p>
+                <p>Location: Redwood Forest, CA</p>
+                <button onclick="registerEvent('Trail Run')">Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Half Marathon</h3>
+                <p>Date: May 10, 2024</p>
+                <p>Location: Golden Gate Bridge, SF</p>
+                <button onclick="registerEvent('Half Marathon')">Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Mumbai Marathon</h3>
+                <p>Date: Jan 26, 2024</p>
+                <p>Location: Gate of India</p>
+                <button onclick="registerEvent('Mumbai Marathon')">Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Navy Run</h3>
+                <p>Date: April 10, 2025</p>
+                <p>Location: Vizag</p>
+                <button onclick="registerEvent('Navy Run')">Register</button>
+            </div>
+            <div class="event-card">
+                <h3>Army Run</h3>
+                <p>Date: Feb 19, 2025</p>
+                <p>Location: Bandra</p>
+                <button onclick="registerEvent('Army Run')">Register</button>
+            </div>
+        </div>
+
+
+        <!-- Registration Form -->
+        <div id="registration-form" style="display: none;">
+            <h3>Register for an Event</h3>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event">Selected Event:</label>
+                <input type="text" id="event" name="event" readonly>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Run with Dheeraj. All rights reserved.</p>
+    </footer>
+
+    <script src="script3.js"></script>
+</body>
+</html>

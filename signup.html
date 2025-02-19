@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Run with Dheeraj</title>
+    <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+    <header>
+        <h1>Run with Dheeraj</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Schedules</a></li>
+                <li><a href="progress.html">Progress Tracking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup">
+        <h2>Create Your Account</h2>
+        <p>Join our running community and access exclusive benefits. Fill in your details to get started!</p>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Choose a password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            </div>
+            <div class="form-group">
+                <label for="membership">Membership Plan:</label>
+                <select id="membership" name="membership">
+                    <option value="basic">Basic Membership - ₹749/month</option>
+                    <option value="premium">Premium Membership - ₹1499/month</option>
+                    <option value="annual">Annual Membership - ₹14999/year</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Run with Dheeraj. All rights reserved.</p>
+    </footer>
+</body>
+</html>

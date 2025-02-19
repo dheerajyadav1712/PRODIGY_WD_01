@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Schedules</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Run with Dheeraj</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Schedules</a></li>
+                <li><a href="progress.html">Progress Tracking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Customized Training Schedules</h2>
+        <p>Whether you're a beginner or a seasoned runner, our training plans are tailored to help you reach your goals.</p>
+        <p>Choose your experience level and get started!</p>
+    </section>
+
+    <section id="training-plans">
+        <div class="plan">
+            <h3>Beginner Training Plan</h3>
+            <p>This plan is designed for those who are new to running. It focuses on building stamina and gradually increasing distance.</p>
+            <ul>
+                <li>Week 1: 3 x 20-minute runs</li>
+                <li>Week 2: 3 x 30-minute runs</li>
+                <li>Week 3: 4 x 30-minute runs</li>
+                <li>Week 4: 4 x 35-minute runs</li>
+                <li>Week 5: 4 x 40-minute runs</li>
+                <li>Week 6: 5 x 45-minute runs</li>
+            </ul>
+            <button onclick="showDetails('beginner')">View Detailed Plan</button>
+        </div>
+
+        <div class="plan">
+            <h3>Intermediate Training Plan</h3>
+            <p>For runners who are comfortable with regular running, this plan helps build speed and endurance.</p>
+            <ul>
+                <li>Week 1: 4 x 30-minute runs</li>
+                <li>Week 2: 4 x 35-minute runs</li>
+                <li>Week 3: 4 x 40-minute runs</li>
+                <li>Week 4: 5 x 40-minute runs with speed intervals</li>
+                <li>Week 5: 5 x 45-minute runs with hills</li>
+                <li>Week 6: 6 x 50-minute runs with sprints</li>
+            </ul>
+            <button onclick="showDetails('intermediate')">View Detailed Plan</button>
+        </div>
+
+        <div class="plan">
+            <h3>Advanced Training Plan</h3>
+            <p>For experienced runners aiming to achieve peak performance, this plan focuses on speed, recovery, and long-distance running.</p>
+            <ul>
+                <li>Week 1: 5 x 40-minute runs</li>
+                <li>Week 2: 5 x 45-minute runs with tempo runs</li>
+                <li>Week 3: 5 x 50-minute runs with interval training</li>
+                <li>Week 4: 6 x 60-minute runs with long-distance focus</li>
+                <li>Week 5: 6 x 70-minute runs with speed work</li>
+                <li>Week 6: 7 x 80-minute runs with a focus on recovery</li>
+            </ul>
+            <button onclick="showDetails('advanced')">View Detailed Plan</button>
+        </div>
+    </section>
+
+    <section id="detailed-plans">
+        <div id="beginner-plan" class="details" style="display: none;">
+            <h3>Beginner Training Plan - Detailed</h3>
+            <p>
+                This 6-week plan is designed for individuals new to running. The goal is to build endurance and improve running 
+                stamina gradually. Each week includes a mix of walking, jogging, and rest days for recovery.
+            </p>
+            
+            <h4>Weekly Breakdown:</h4>
+            <ul>
+                <li>
+                    <strong>Week 1:</strong>
+                    <p>
+                        <b>Focus:</b> Getting started with short intervals of walking and jogging.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 5 min warm-up walk + 1 min jog + 2 min walk (Repeat 6 times)</li>
+                            <li>Day 2: Rest or light stretching</li>
+                            <li>Day 3: 5 min warm-up walk + 1 min jog + 2 min walk (Repeat 8 times)</li>
+                            <li>Day 4: Rest</li>
+                            <li>Day 5: 10 min brisk walk</li>
+                            <li>Day 6: 5 min warm-up walk + 1 min jog + 1 min walk (Repeat 6 times)</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 2:</strong>
+                    <p>
+                        <b>Focus:</b> Building consistency and slightly increasing jogging intervals.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 5 min warm-up walk + 2 min jog + 1 min walk (Repeat 5 times)</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: 10 min brisk walk + 2 min jog + 2 min walk (Repeat 4 times)</li>
+                            <li>Day 4: Rest or light yoga</li>
+                            <li>Day 5: 5 min warm-up walk + 3 min jog + 1 min walk (Repeat 4 times)</li>
+                            <li>Day 6: Easy 15-minute jog</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 3:</strong>
+                    <p>
+                        <b>Focus:</b> Building endurance and reducing walk intervals.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 5 min warm-up walk + 3 min jog + 1 min walk (Repeat 5 times)</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: 20 min slow jog</li>
+                            <li>Day 4: Rest</li>
+                            <li>Day 5: 10 min warm-up + 4 min jog + 1 min walk (Repeat 3 times)</li>
+                            <li>Day 6: 10 min brisk walk + 20 min jog</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 4:</strong>
+                    <p>
+                        <b>Focus:</b> Transitioning to continuous jogging for longer periods.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 5 min warm-up walk + 5 min jog + 1 min walk (Repeat 4 times)</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: 25 min continuous jog</li>
+                            <li>Day 4: Rest</li>
+                            <li>Day 5: 5 min warm-up walk + 10 min jog + 1 min walk (Repeat 2 times)</li>
+                            <li>Day 6: 30 min slow jog</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 5:</strong>
+                    <p>
+                        <b>Focus:</b> Increasing endurance to continuous 30-minute jogging.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 10 min warm-up + 20 min jog</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: 30 min jog</li>
+                            <li>Day 4: Rest</li>
+                            <li>Day 5: 10 min brisk walk + 20 min jog + 5 min walk</li>
+                            <li>Day 6: 35 min jog</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 6:</strong>
+                    <p>
+                        <b>Focus:</b> Achieving a milestone of a continuous 5k jog.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 10 min warm-up walk + 30 min jog</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: 5k jog or 40 minutes continuous jog</li>
+                            <li>Day 4: Rest</li>
+                            <li>Day 5: 5 min warm-up + 25 min jog + 5 min brisk walk</li>
+                            <li>Day 6: 5k jog (Celebrate your progress!)</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+            
+            <h4>Tips for Beginners:</h4>
+            <ul>
+                <li>Always warm up before running and cool down afterward with stretching.</li>
+                <li>Stay hydrated before, during, and after your runs.</li>
+                <li>Invest in good running shoes to prevent injuries.</li>
+                <li>Listen to your body and take rest days seriously.</li>
+                <li>Track your progress and celebrate small milestones.</li>
+            </ul>
+        </div>
+        
+        <div id="intermediate-plan" class="details" style="display: none;">
+            <h3>Intermediate Training Plan - Detailed</h3>
+            <p>
+                This 8-week plan is designed for runners who can comfortably run 5k and aim to improve their speed, endurance, 
+                and consistency. The plan includes interval training, tempo runs, and long-distance runs to help you achieve 
+                new milestones.
+            </p>
+            
+            <h4>Weekly Breakdown:</h4>
+            <ul>
+                <li>
+                    <strong>Week 1:</strong>
+                    <p>
+                        <b>Focus:</b> Establishing a consistent running routine and introducing interval training.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 5 min warm-up jog + 3 min moderate run + 1 min walk (Repeat 6 times)</li>
+                            <li>Day 2: 30 min easy jog</li>
+                            <li>Day 3: Rest or light cross-training</li>
+                            <li>Day 4: Tempo run - 10 min warm-up + 15 min at threshold pace + 5 min cool-down</li>
+                            <li>Day 5: 20 min recovery jog</li>
+                            <li>Day 6: Long run - 8 km at a steady pace</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 2:</strong>
+                    <p>
+                        <b>Focus:</b> Increasing distance and introducing hill training.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: Hill repeats - 5 min warm-up jog + 100m hill sprint (Repeat 6 times with walk recovery)</li>
+                            <li>Day 2: 30 min easy jog</li>
+                            <li>Day 3: Rest or yoga</li>
+                            <li>Day 4: Tempo run - 10 min warm-up + 20 min at threshold pace + 5 min cool-down</li>
+                            <li>Day 5: Interval training - 4x 800m at 80% effort with 3 min rest between intervals</li>
+                            <li>Day 6: Long run - 10 km at a steady pace</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 3:</strong>
+                    <p>
+                        <b>Focus:</b> Improving speed and endurance through interval training.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: Speed intervals - 6x 400m at 90% effort with 2 min recovery jog</li>
+                            <li>Day 2: 30 min recovery jog</li>
+                            <li>Day 3: Rest</li>
+                            <li>Day 4: Tempo run - 10 min warm-up + 25 min at threshold pace + 5 min cool-down</li>
+                            <li>Day 5: Hill repeats - 6x 150m uphill sprints with jog recovery</li>
+                            <li>Day 6: Long run - 12 km at a steady pace</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 4:</strong>
+                    <p>
+                        <b>Focus:</b> Recovery week with reduced intensity and mileage.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: 20 min easy jog</li>
+                            <li>Day 2: Rest</li>
+                            <li>Day 3: Tempo run - 10 min warm-up + 20 min at threshold pace</li>
+                            <li>Day 4: Rest or yoga</li>
+                            <li>Day 5: 30 min easy jog</li>
+                            <li>Day 6: Long run - 8 km at a steady pace</li>
+                            <li>Day 7: Rest</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Weeks 5-8:</strong>
+                    <p>
+                        <b>Focus:</b> Progressively increasing intensity and achieving peak performance.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Speed workouts on Mondays, including intervals of 400m, 800m, and 1km at 85-90% effort.</li>
+                            <li>Tempo runs on Wednesdays with gradual increases in threshold pace duration.</li>
+                            <li>Long runs on Saturdays, increasing distance by 1-2 km weekly, culminating in a 16 km run by week 8.</li>
+                            <li>Active recovery or rest on other days.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+            
+            <h4>Tips for Intermediate Runners:</h4>
+            <ul>
+                <li>Incorporate strength training twice a week to improve muscle endurance and prevent injuries.</li>
+                <li>Monitor your pace during tempo and interval runs to avoid overtraining.</li>
+                <li>Hydrate and fuel properly during long runs to sustain energy.</li>
+                <li>Listen to your body and take extra rest days if needed.</li>
+            </ul>
+        </div>
+        
+        <div id="advanced-plan" class="details" style="display: none;">
+            <h3>Advanced Training Plan - Detailed</h3>
+            <p>
+                This 12-week plan is tailored for experienced runners aiming to push their limits and achieve personal bests. 
+                The plan includes high-intensity interval training (HIIT), pace-specific runs, and advanced endurance workouts.
+            </p>
+        
+            <h4>Weekly Breakdown:</h4>
+            <ul>
+                <li>
+                    <strong>Week 1-4:</strong>
+                    <p>
+                        <b>Focus:</b> Building base fitness with high-intensity runs and strength training.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: HIIT session - 10 min warm-up + 8x 200m sprints at 90% effort with 1 min rest.</li>
+                            <li>Day 2: 40 min steady run at 70% effort.</li>
+                            <li>Day 3: Rest or strength training (squats, lunges, core exercises).</li>
+                            <li>Day 4: Tempo run - 10 min warm-up + 25 min at threshold pace + 5 min cool-down.</li>
+                            <li>Day 5: Fartlek run - 10 min jog + alternating 1 min fast, 2 min slow for 20 min.</li>
+                            <li>Day 6: Long run - 14 km at a steady pace.</li>
+                            <li>Day 7: Rest.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 5-8:</strong>
+                    <p>
+                        <b>Focus:</b> Increasing mileage and speed endurance.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: Speed intervals - 6x 800m at 85% effort with 2 min recovery jog.</li>
+                            <li>Day 2: Recovery run - 30 min at an easy pace.</li>
+                            <li>Day 3: Rest or yoga.</li>
+                            <li>Day 4: Hill training - 10 min warm-up + 8x 150m hill sprints with jog recovery.</li>
+                            <li>Day 5: Tempo run - 10 min warm-up + 30 min at threshold pace.</li>
+                            <li>Day 6: Long run - 18 km at a steady pace with negative splits (faster finish).</li>
+                            <li>Day 7: Rest.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <strong>Week 9-12:</strong>
+                    <p>
+                        <b>Focus:</b> Peaking and race preparation.<br>
+                        <b>Schedule:</b>
+                        <ul>
+                            <li>Day 1: Pyramid intervals - 400m, 600m, 800m, 600m, 400m at 85-90% effort.</li>
+                            <li>Day 2: 40 min recovery jog.</li>
+                            <li>Day 3: Rest or light strength training.</li>
+                            <li>Day 4: Tempo run - 10 min warm-up + 35 min at race pace + 5 min cool-down.</li>
+                            <li>Day 5: Fartlek run - 20 min alternating 2 min fast, 2 min slow.</li>
+                            <li>Day 6: Long run - 20 km at steady pace, incorporating race pace for the last 5 km.</li>
+                            <li>Day 7: Rest.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+        
+            <h4>Tips for Advanced Runners:</h4>
+            <ul>
+                <li>Incorporate dynamic warm-ups before each run to prevent injuries.</li>
+                <li>Use a heart rate monitor to ensure you're training in the optimal zones.</li>
+                <li>Plan your nutrition and hydration strategy for long runs and races.</li>
+                <li>Include foam rolling and stretching sessions to aid recovery.</li>
+            </ul>
+        </div>
+            </section>
+
+    <footer>
+        <p>&copy; 2024 Run with Dheeraj. All rights reserved.</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

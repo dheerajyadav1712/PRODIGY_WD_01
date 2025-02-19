@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <header>
+        <h1>Run with Dheeraj</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Schedules</a></li>
+                <li><a href="progress.html">Progress Tracking</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+        <script>
+            // JavaScript to pause other videos when one starts playing
+            document.addEventListener('DOMContentLoaded', function () {
+                const videos = document.querySelectorAll('video'); // Get all videos
+    
+                // Add event listener to each video
+                videos.forEach(video => {
+                    video.addEventListener('play', function () {
+                        // Pause all videos except the one being played
+                        videos.forEach(otherVideo => {
+                            if (otherVideo !== video) {
+                                otherVideo.pause();
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    </header>
+
+    <section>
+        <!-- Photo Section -->
+        <div class="photo-gallery">
+            <h3>Photo Gallery</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images1.jpg" alt="Runner 1">
+                    <div class="overlay">"Push yourself, because no one else is going to do it for you."</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images2.jpg" alt="Runner 2">
+                    <div class="overlay">"The pain you feel today will be the strength you feel tomorrow."</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images3.jpg" alt="Runner 3">
+                    <div class="overlay">"Your only limit is you."</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-gallery">
+            <h3>Video Gallery</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="run1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="run2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="run3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Run with Dheeraj. All rights reserved.</p>
+    </footer>
+</body>
+</html>

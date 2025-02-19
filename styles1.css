@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f90;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f90;
+}
+
+/* Intro Section */
+#intro {
+    padding: 2rem;
+    background-color: #eaf7ea;
+    text-align: center;
+    margin: 0;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    color: #ff4500;
+}
+
+#intro p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+/* Training Plans Section */
+#training-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    color: #ff4500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.plan p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.plan ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.plan button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.plan button:hover {
+    background-color: #ff4500;
+}
+
+/* Detailed Plans Section */
+#detailed-plans {
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+.details {
+    display: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.details h3 {
+    color: #ff4500;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.details ul {
+    list-style: disc;
+    margin: 1rem 0 0 1.5rem;
+    padding: 0;
+}
+
+.details ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #training-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 400px;
+    }
+}
